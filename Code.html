@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>TacocaT</title>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicons -->
+  <link href="img/tacocat-favicon.ico" rel="icon">
+
+  <!--CSS for every challenge-->
+  <link rel="stylesheet" href="/css/site.css">
+
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-twilight.min.css"
+    integrity="sha512-akb4nfKzpmhujLUyollw5waBPeohuVf0Z5+cL+4Ngc4Db+V8szzx6ZTujguFjpmD076W8LImVIbOblmQ+vZMKA=="
+    crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <!--Prism CSS-->
+  <link href="css/prismTomorrow.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark">
+    <a class="navbar-brand" href="#">TacocaT challenge</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Challenges</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="Code.html">Code<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Git</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">My Blog</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container col-3 col-md-4 col-sm-2 container-fluid">
+    <div class="row">
+      <div class="col col-3 col-md-4 col-sm-2 align-content-lg-start">
+        <img src="img/tacoCat.png">
+      </div>
+    </div>
+  </div>
+  <div class="container col-5 shadow p-3 mb-5 bg-white rounded">
+    <div class="row">
+      <div class="col">
+        <h2 id="tacocat-title" class="text-center">TacocaT</h2>
+        <h2 id="tacocat-title" class="text-center">Code</h2>
+        <br>
+        <p class="text-center">Bellow is the JavaScript code used for this challenge</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-lg-10 col-md-4 container-fluid">
+        <pre class="language-javascript">
+          <code>
+  function reverseString() {
+  //get the user's word
+
+  let userWord = document.getElementById("tacoCat").value;
+  let regexWord = userWord.replace(/[\W_]/g).toLowerCase();
+  let start = regexWord.length - 1;
+  let reverseWord = "";
+
+  //for loop
+  for (let i = start; i >= 0; i--) {
+  reverseWord += regexWord[i];
+  }
+  let output = document.getElementById("tacoOutput");
+  output.innerText = reverseWord;
+
+  //pallindrome
+  let trueFalsePalindrome = document.getElementById("palindrome");
+  if (regexWord === reverseWord) {
+  trueFalsePalindrome.innerText = "It's a palindrome";
+  } else {
+  trueFalsePalindrome.innerText = "It's not a palindrome";
+  }
+
+  }
+          </code>
+        </pre>
+      </div>
+    </div>
+
+    <footer>
+      <p class="text-center">Developed by Leo J. Barnuevo | Coder Foundry</p>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+        ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script>
+      window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+    </script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"
+      integrity="sha512-WkVkkoB31AoI9DAk6SEEEyacH9etQXKUov4JRRuM1Y681VsTq7jYgrRw06cbP6Io7kPsKx+tLFpH/HXZSZ2YEQ=="
+      crossorigin="anonymous">
+    </script>
+
+    <script src="js/prismTomorrow.js"></script>
+
+
+
+
+</html>

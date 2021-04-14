@@ -1,0 +1,54 @@
+html>body {
+    height: 100%;
+    background-color: #F2F2F2;
+}
+
+nav {
+    background-color: #A68F1F;
+}
+
+footer {
+
+    color: #A68F1F;
+}
+
+.header {
+    background-color: #76B1DB;
+}
+
+@media (min-width: 768px) {
+    .header {
+        background-image: url("/img/bot-image.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: fixed;
+        background-color: #329cb2;
+    }
+
+    .hero {
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 10px 0;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+}
+
+.footer>.container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#tacoBtn {
+    background-color: #A6A297;
+
+}
+
+#tacocat-title {
+    font-family: 'Press Start 2P', cursive;
+}
+
+#palindrome {
+    font-family: 'Press Start 2P', cursive;
+}
